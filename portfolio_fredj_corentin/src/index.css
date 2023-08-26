@@ -21,3 +21,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+img{
+  filter: saturate(40%) sepia(30%) hue-rotate(5deg);
+}
+
+html, body, section {
+  block-size: 100%;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  padding-top: 10%;
+
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section:nth-of-type(even) {
+  background: transparent;
+}
+
+section:nth-of-type(odd) {
+  background: transparent;
+}

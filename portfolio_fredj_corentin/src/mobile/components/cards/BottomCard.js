@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import DragMove from "../utils/DragMove";
 import { GiClick } from "react-icons/gi";
+import './BottomCard.css'
 
 
 export default function BottomCard (props){
@@ -14,8 +15,9 @@ export default function BottomCard (props){
     const [delay, setDelay] = useState(1);
     const [isRunning, setIsRunning] = useState(false);
     const [open, setOpen] = useState(false)
-    const [distance, setDistance] = useState(400)
-
+    const [distance, setDistance] = useState(85)
+    const speed = 0.3
+    const tick = 0.3
     
     // function
 
@@ -30,9 +32,9 @@ export default function BottomCard (props){
         useInterval(() => {
             if (open === false){
                 if (count < distance){
-                    setCount(count + 1);
+                    setCount(count + tick);
                     setTranslate({
-                        y: translate.y + 1
+                        y: translate.y + speed
                     });
                 }
                 else if (count >= distance){
@@ -42,9 +44,9 @@ export default function BottomCard (props){
             }
             else if (open === true){
                 if (count > 0){
-                    setCount(count - 1);
+                    setCount(count - tick);
                     setTranslate({
-                        y: translate.y - 1
+                        y: translate.y - speed
                     });
                 }
                 else if (count <= 0){
@@ -52,7 +54,6 @@ export default function BottomCard (props){
                     handleIsRunningChange()
                 }
             }
-            console.log(translate)
 
         }, isRunning ? delay : null);
       
@@ -104,9 +105,15 @@ export default function BottomCard (props){
     return (
         <div>
             <DragMove onDragMove={handleDragMove}>
-                <div style={{transform: `translateY(${translate.y}px)`}} onClick={handleIsRunningChange} className="block fixed inset-x-0 bottom-0 bg-slate-800 fixed w-full h-[480px] z-0 overflow-visible cursor-pointer hover:shadow-inner hover:shadow-gray-50/50 rounded-md">
-                    <div className={`grid justify-center mt-8 animate-bounce ${props.class}`}>
-                        <span style={{fontSize: '50px'}}><GiClick/></span>
+                <div style={{transform: `translateY(${translate.y}%)`}} onClick={handleIsRunningChange} className="block inset-x-0 bottom-0 bg-slate-800 fixed w-full h-[84%] z-0 overflow-visible cursor-pointer hover:shadow-inner hover:shadow-gray-50/50 rounded-md">
+                    <div className={`grid justify-center animate-bounce hand ${props.class}`}>
+                        <span className="" style={{fontSize: '50px'}}><GiClick/></span>
+                    </div>
+                    <div className="grid justify-center flex items-center">
+                        <h2 className="text-lg p-5 text-center text-blue-100 text-b-xl font-mono text-xl">Corentin Fredj</h2>
+                        <h2 className="text-lg p-5 text-center text-blue-100">Développeur Web/Mobile full stack</h2>
+                        <h2 className="text-lg p-5 text-center text-blue-100">Pour toute demande de projet, n'hésitez pas à me contacter par Email !</h2>
+                        <h2 className="text-lg p-5 text-center animate-pulse text-blue-300">corentinfredj.dev@gmail.com</h2>
                     </div>
                     <Counter/>
                 </div>

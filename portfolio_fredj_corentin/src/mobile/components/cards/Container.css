@@ -1,0 +1,16 @@
+.containerCards {
+  padding-bottom: 20%;
+  padding-top: 100%;
+}
+
+.cardCSS {
+  width: 250px;
+  height: 250px;
+}
+
+@media (min-width: 700px) {
+  .cardCSS {
+    width: 70vh;
+    height: 40vh;
+  }
+}/*# sourceMappingURL=Container.css.map */

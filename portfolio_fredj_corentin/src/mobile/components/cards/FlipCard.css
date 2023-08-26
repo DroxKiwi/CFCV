@@ -1,0 +1,56 @@
+.card {
+  perspective: 150rem;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  box-shadow: none;
+  background: none;
+  margin-bottom: 25%;
+}
+
+.card-side {
+  border-radius: 15px;
+  transition: all 1s ease;
+  transition-delay: 300ms;
+  backface-visibility: hidden;
+  position: absolute;
+  padding: 2rem;
+  color: white;
+}
+
+.card-side.back {
+  transform: rotateY(-180deg);
+  width: 250px;
+  height: 250px;
+}
+
+.imgSize {
+  max-width: 80%;
+}
+
+@media (min-width: 700px) {
+  .card {
+    perspective: 150rem;
+    width: 70vh;
+    height: 40vh;
+    box-shadow: none;
+    background: none;
+    margin-bottom: 10%;
+  }
+  .card-side {
+    border-radius: 15px;
+    transition: all 1s ease;
+    transition-delay: 300ms;
+    backface-visibility: hidden;
+    position: absolute;
+    padding: 2rem;
+    color: white;
+  }
+  .card-side.back {
+    width: 70vh;
+    height: 40vh;
+  }
+  .imgSize {
+    max-width: 40%;
+  }
+} /*# sourceMappingURL=FlipCard.css.map */
