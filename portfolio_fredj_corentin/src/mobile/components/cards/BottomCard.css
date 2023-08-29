@@ -2,14 +2,43 @@
     margin-top: 50%;
 }
 
+.textBotCard{
+    font-size: 0.75rem; /* 12px */
+    line-height: 1rem; /* 16px */
+}
+
 @media (min-width: 650px) , (max-width: 999px){
     .hand{
         margin-top: 30%;
     }
 }
 
-@media (min-width: 1000px){
+@media (min-width: 992px){
     .hand{
         margin-top: 20%;
     }
+    #bottomCard{
+        z-index: 11;
+    }
+    .textBotCard{
+        font-size: 1.125rem; /* 18px */
+        line-height: 1.75rem; /* 28px */
+    }
 }
+
+
+.bottomCard{
+    z-index: 999;
+    height: 84%;
+    animation-duration: 3s;
+    transform: translateY(-0%);
+    transition: all 1s ease;
+    transition-delay: 300ms;
+}
+
+.bottomCard.active {
+    animation-duration: 3s;
+    transform: translateY(88%);
+    transition: all 1s ease;
+    transition-delay: 300ms;
+  }

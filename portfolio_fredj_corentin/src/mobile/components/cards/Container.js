@@ -20,13 +20,13 @@ export default function Container() {
         window.open("http://backendv2.bewaveofficial.com/");
     }
 
-    const backContentBeWave = "Site web et application de gestion de contenu de l'application BeWave. Hebergé sur un droplet DigitalOcean, utilisant Express et Twig"
+    const backContentBeWave = "Site web et application de gestion de contenu de l'application BeWave. Hebergé sur un droplet DigitalOcean, utilisant PostgreSQL, Express et Twig"
     const backContentBeWaveApp = "Version web utilisant ReactJS de la version Alpha 0.1 de l'application BeWave"
     const backContentCahupa = "Site web du bar le CAHUPA situé sur Angers, designé par mes soins"
     const cardClass = "cardCSS hover:shadow-gray-50/50 grid justify-items-center flex items-center bg-slate-800 shadow-lg shadow-gray-950/50"
 
     return (
-        <div className="bg-slate-700 box">
+        <div className="bg-slate-700 box w-full">
             <BlobAnimation/>
             <div className="grid bg-slate-700 justify-items-center containerCards">
                 <section className="h-screen">

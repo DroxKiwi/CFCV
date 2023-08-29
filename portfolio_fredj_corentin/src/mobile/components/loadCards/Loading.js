@@ -19,10 +19,12 @@ export default function Loading (){
             <div className="blur-sm grid justify-items-center flex items-center bg-slate-800 w-full">
                 <img className="h-[150px] w-[150] rounded-full m-10" src={pp}/>
                 <h1 className="cursor-default" style={textStyle}>Corentin Fredj</h1>
-                <h2 style={textStyle}>Développeur web full stack</h2>
+                <h3 style={textStyle}>Développeur web full stack</h3>
             </div>
-            <div className="grid justify-items-center bg-slate-800 w-full mt-[20px]">
-                <ReactLoader/>
+            <div className="grid justify-items-center bg-slate-800 w-full">
+                <div className="w-[150px] h-[150px]">
+                    <ReactLoader/>
+                </div>
                 <h4 className="text-white">Chargement ...</h4>
             </div>
         </div>
