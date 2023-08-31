@@ -17,7 +17,7 @@ export default function Container() {
         window.open("http://appv1.bewaveofficial.com/")
     }
     const handleRedirectionCahupa = () => {
-        window.open("http://backendv2.bewaveofficial.com/");
+        window.open("http://cahupa.com/");
     }
 
     const backContentBeWave = "Site web et application de gestion de contenu de l'application BeWave. Hebergé sur un droplet DigitalOcean, utilisant PostgreSQL, Express et Twig"

@@ -28,7 +28,7 @@
 
 
 .bottomCard{
-    z-index: 999;
+    z-index: 9;
     height: 84%;
     animation-duration: 3s;
     transform: translateY(-0%);

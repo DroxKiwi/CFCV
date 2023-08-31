@@ -22,10 +22,6 @@ code {
     monospace;
 }
 
-img{
-  filter: saturate(40%) sepia(30%) hue-rotate(5deg);
-}
-
 html, body, section {
   block-size: 100%;
 }
