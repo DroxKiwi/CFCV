@@ -8,7 +8,7 @@
 
 .shape-blob {
 	background:#26f9f9;
-	height: 60px;
+	height: 150px;
 	width: 280px;
 	border-radius: 40% 50% 30% 40%;
   	animation: 
@@ -16,9 +16,8 @@
 		movement_one 12s ease-in-out infinite both;
 	opacity:.7;
 	position: absolute;
-	left: 10%;
-	top: 10%;
-	filter: blur(10px);
+	left: 40%;
+	top: 50%;
 }
 
 .shape-blob.one{
@@ -26,11 +25,9 @@
 	height: 150px;
 	width: 160px;
 	left: 1%;
-	top: 10%;
+	top: 50%;
 	transform: rotate(-180deg);
 	animation: transform 8s ease-in-out infinite both alternate, movement_two 20s ease-in-out infinite both;
-	filter: blur(60px);
-
 }
 
 
@@ -42,18 +39,16 @@
 	top: 30%;
 	transform: rotate(-180deg);
 	animation: transform 5s ease-in-out infinite both alternate, movement_two 5s ease-in-out infinite both;
-	filter: blur(10px);
 }
 
 .shape-blob.four{
 	background:#4EAEFF;
 	height: 110px;
 	width: 120px;
-	left: 30%;
+	left: 70%;
 	top: 50%;
 	transform: rotate(-180deg);
 	animation: transform 17s ease-in-out infinite both alternate, movement_two 13s ease-in-out infinite both;
-	filter: blur(10px);
 }
 
 .shape-blob.five{
@@ -61,22 +56,19 @@
 	height: 110px;
 	width: 180px;
 	left: 40%;
-	top: 10%;
+	top: 20%;
 	transform: rotate(-180deg);
 	animation: transform 12s ease-in-out infinite both alternate, movement_two 18s ease-in-out infinite both;
-	filter: blur(30px);
 }
 
 .shape-blob.two{
 	background:#4EAEFF;
 	height: 150px;
 	width: 110px;
-	left: 50%;
+	left: 80%;
 	top: 10%;
 	transform: rotate(-180deg);
 	animation: transform 10s ease-in-out infinite both alternate, movement_two 10s ease-in-out infinite both;
-	filter: blur(70px);
-
 }
 
 .shape-blob.three{
@@ -84,223 +76,9 @@
 	height: 150px;
 	width: 110px;
 	left: 45%;
-	top: 60%;
+	top: 70%;
 	transform: rotate(-180deg);
 	animation: transform 7s ease-in-out infinite both alternate, movement_two 23s ease-in-out infinite both;
-	filter: blur(10px);
-}
-
-.shape-blob.seven{
-	background:#0085FF;
-	height: 260px;
-	width: 160px;
-	left: 1%;
-	top: 80%;
-	transform: rotate(-180deg);
-	animation: transform 8s ease-in-out infinite both alternate, movement_two 20s ease-in-out infinite both;
-	filter: blur(80px);
-}
-
-
-.shape-blob.eight{
-	background:#0EAFFF;
-	height: 180px;
-	width: 380px;
-	left: 10%;
-	top: 50%;
-	transform: rotate(-180deg);
-	animation: transform 5s ease-in-out infinite both alternate, movement_two 5s ease-in-out infinite both;
-	filter: blur(70px);
-}
-
-.shape-blob.nine{
-	background:#4EAEFF;
-	height: 110px;
-	width: 120px;
-	left: 30%;
-	top: 80%;
-	transform: rotate(-180deg);
-	animation: transform 17s ease-in-out infinite both alternate, movement_two 13s ease-in-out infinite both;
-	filter: blur(10px);
-}
-
-.shape-blob.ten{
-	background:#0085FF;
-	height: 110px;
-	width: 180px;
-	left: 40%;
-	top: 80%;
-	transform: rotate(-180deg);
-	animation: transform 12s ease-in-out infinite both alternate, movement_two 18s ease-in-out infinite both;
-	filter: blur(30px);
-}
-
-.shape-blob.eleven{
-	background:#4EAEFF;
-	height: 150px;
-	width: 110px;
-	left: 50%;
-	top: 80%;
-	transform: rotate(-180deg);
-	animation: transform 10s ease-in-out infinite both alternate, movement_two 10s ease-in-out infinite both;
-	filter: blur(70px);
-
-}
-
-.shape-blob.twelve{
-	background:#4ebeff;
-	height: 150px;
-	width: 110px;
-	left: 45%;
-	top: 80%;
-	transform: rotate(-180deg);
-	animation: transform 7s ease-in-out infinite both alternate, movement_two 23s ease-in-out infinite both;
-	filter: blur(40px);
-
-}
-
-.shape-blob.b13{
-	background:#0085FF;
-	height: 150px;
-	width: 150px;
-	left: 60%;
-	top: 10%;
-	transform: rotate(-180deg);
-	animation: transform 8s ease-in-out infinite both alternate, movement_two 20s ease-in-out infinite both;
-	filter: blur(10px);
-
-}
-
-
-.shape-blob.b14{
-	background:#0EAFFF;
-	height: 100px;
-	width: 180px;
-	left: 70%;
-	top: 50%;
-	transform: rotate(-180deg);
-	animation: transform 5s ease-in-out infinite both alternate, movement_two 5s ease-in-out infinite both;
-	filter: blur(80px);
-
-}
-
-.shape-blob.b15{
-	background:#4EAEFF;
-	height: 110px;
-	width: 120px;
-	left: 75%;
-	top: 15%;
-	transform: rotate(-180deg);
-	animation: transform 17s ease-in-out infinite both alternate, movement_two 13s ease-in-out infinite both;
-	filter: blur(50px);
-
-}
-
-.shape-blob.b16{
-	background:#00e1ff;
-	height: 110px;
-	width: 180px;
-	left: 80%;
-	top: 30%;
-	transform: rotate(-180deg);
-	animation: transform 12s ease-in-out infinite both alternate, movement_two 18s ease-in-out infinite both;
-	filter: blur(10px);
-
-}
-
-.shape-blob.b17{
-	background:#4EAEFF;
-	height: 150px;
-	width: 110px;
-	left: 90%;
-	top: 10%;
-	transform: rotate(-180deg);
-	animation: transform 10s ease-in-out infinite both alternate, movement_two 10s ease-in-out infinite both;
-	filter: blur(20px);
-
-}
-
-.shape-blob.b18{
-	background:#4ebeff;
-	height: 150px;
-	width: 110px;
-	left: 95%;
-	top: 10%;
-	transform: rotate(-180deg);
-	animation: transform 7s ease-in-out infinite both alternate, movement_two 23s ease-in-out infinite both;
-}
-
-.shape-blob.b19{
-	background:#0085FF;
-	height: 150px;
-	width: 150px;
-	left: 60%;
-	top: 80%;
-	transform: rotate(-180deg);
-	animation: transform 8s ease-in-out infinite both alternate, movement_two 20s ease-in-out infinite both;
-	filter: blur(60px);
-
-}
-
-
-.shape-blob.b20{
-	background:#0EAFFF;
-	height: 100px;
-	width: 180px;
-	left: 70%;
-	top: 80%;
-	transform: rotate(-180deg);
-	animation: transform 5s ease-in-out infinite both alternate, movement_two 5s ease-in-out infinite both;
-	filter: blur(60px);
-
-}
-
-.shape-blob.b21{
-	background:#4EAEFF;
-	height: 110px;
-	width: 120px;
-	left: 75%;
-	top: 80%;
-	transform: rotate(-180deg);
-	animation: transform 17s ease-in-out infinite both alternate, movement_two 13s ease-in-out infinite both;
-	filter: blur(40px);
-
-}
-
-.shape-blob.b22{
-	background:#00e1ff;
-	height: 110px;
-	width: 180px;
-	left: 80%;
-	top: 80%;
-	transform: rotate(-180deg);
-	animation: transform 12s ease-in-out infinite both alternate, movement_two 18s ease-in-out infinite both;
-	filter: blur(70px);
-
-}
-
-.shape-blob.b23{
-	background:#4EAEFF;
-	height: 150px;
-	width: 110px;
-	left: 90%;
-	top: 80%;
-	transform: rotate(-180deg);
-	animation: transform 10s ease-in-out infinite both alternate, movement_two 10s ease-in-out infinite both;
-	filter: blur(10px);
-
-}
-
-.shape-blob.b24{
-	background:#4ebeff;
-	height: 150px;
-	width: 110px;
-	left: 95%;
-	top: 80%;
-	transform: rotate(-180deg);
-	animation: transform 7s ease-in-out infinite both alternate, movement_two 23s ease-in-out infinite both;
-	filter: blur(20px);
-
 }
 
 @keyframes transform

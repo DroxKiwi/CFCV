@@ -5,7 +5,7 @@ import webapp from "../../assets/backendv2.png";
 import mobileapp from "../../assets/appv1.png";
 import cahupa3 from "../../assets/cahupa3.png";
 import './Container.css'
-import BlobAnimation from "./BlocAnimation";
+//import BlobAnimation from "./BlocAnimation";
 
 export default function Container() {
 
@@ -27,7 +27,6 @@ export default function Container() {
 
     return (
         <div className="bg-slate-700 box w-full">
-            <BlobAnimation/>
             <div className="grid bg-slate-700 justify-items-center containerCards">
                 <section className="h-screen">
                     <ProjectCard onClickBtn={handleRedirectionBewave} image={bewave} backImage={webapp} backContent={backContentBeWave} frontText={"Webapp BeWave"} class={cardClass}/>
